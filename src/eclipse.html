@@ -3,75 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link href="css/eclipse.css" media="all" rel="stylesheet" />
   </head>
   <body>
-    <style type="text/css">
-    .ray{
-         -webkit-animation: hide 2.1s  linear;
-                animation: hide 2.1s  linear;
-        -webkit-transform-origin: 50% 50%;
-                transform-origin: 50% 50%;
-    }
-    #moon{
-        -webkit-animation: move 2.1s  linear;
-                animation: move 2.1s  linear;
-        -webkit-transform-origin: 50% 50%;
-                transform-origin: 50% 50%;
-    }
-    #sun{
-      opacity: 0;
-             -webkit-animation: reduce 1.8s linear;
-                    animation: reduce 1.8s linear;
-
-    }
-    @keyframes reduce {
-          0%   { opacity: 1; }
-          100% { opacity: 0; }
-    }
-    @keyframes move {
-          100% {
-            -webkit-transform: translateX(-72%);
-                    transform: translateX(-72%);
-          }
-    }
-    @keyframes hide {
-          60% {
-            opacity: .22;
-            -webkit-transform: scale(.45, .45);
-                    transform: scale(.45, .45);
-          }
-          100% {
-            opacity: .0;
-            -webkit-transform: scale(0, 0);
-                    transform: scale(0, 0);
-          }
-    }
-    @-webkit-keyframes  reduce {
-          0%   { opacity: 1; }
-          100% { opacity: 0; }
-    }
-    @-webkit-keyframes  move {
-          100% {
-            -webkit-transform: translateX(-72%);
-                    transform: translateX(-72%);
-          }
-    }
-    @-webkit-keyframes  hide {
-          60% {
-            opacity: .22;
-            -webkit-transform: scale(.45, .45);
-                    transform: scale(.45, .45);
-          }
-          100% {
-            opacity: .0;
-            -webkit-transform: scale(0, 0);
-                    transform: scale(0, 0);
-          }
-    }
-    </style>
-
     <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-    <svg width="264" height="248" viewBox="0 0 64 48" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <svg width="64" height="48" viewBox="0 0 64 48" version="1.1" xmlns="http://www.w3.org/2000/svg">
      <g id="Page-1" fill="none" fill-rule="evenodd">
       <g id="Artboard-3" transform="translate(-524.000000, -248.000000)">
        <g id="Eclipse" transform="translate(524.000000, 248.000000)">
@@ -95,11 +31,5 @@
       </g>
      </g>
     </svg>
-
-
-
-
-
-
   </body>
 </html>

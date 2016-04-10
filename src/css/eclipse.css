@@ -1,0 +1,70 @@
+
+.ray {
+    -webkit-animation: hide 2.1s  linear;
+    -webkit-transform-origin: 50% 50%;
+    animation: hide 2.1s  linear;
+    transform-origin: 50% 50%;
+}
+#moon {
+    -webkit-animation: move 2.1s  linear;
+    -webkit-transform-origin: 50% 50%;
+    animation: move 2.1s  linear;
+    transform-origin: 50% 50%;
+}
+#sun {
+    -webkit-animation: reduce 1.8s linear;
+    animation: reduce 1.8s linear;
+    opacity: 0;
+}
+@keyframes reduce {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes move {
+    100% {
+        -webkit-transform: translateX(-72%);
+        transform: translateX(-72%);
+    }
+}
+@keyframes hide {
+    60% {
+        -webkit-transform: scale(0.45, 0.45);
+        opacity: 0.22;
+        transform: scale(0.45, 0.45);
+    }
+    100% {
+        -webkit-transform: scale(0, 0);
+        opacity: 0.0;
+        transform: scale(0, 0);
+    }
+}
+@-webkit-keyframes  reduce {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@-webkit-keyframes  move {
+    100% {
+        -webkit-transform: translateX(-72%);
+        transform: translateX(-72%);
+    }
+}
+@-webkit-keyframes  hide {
+    60% {
+        -webkit-transform: scale(0.45, 0.45);
+        opacity: 0.22;
+        transform: scale(0.45, 0.45);
+    }
+    100% {
+        -webkit-transform: scale(0, 0);
+        opacity: 0.0;
+        transform: scale(0, 0);
+    }
+}
