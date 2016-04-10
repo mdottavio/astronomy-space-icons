@@ -1,0 +1,63 @@
+.whell {
+    -webkit-animation: bump 0.45s linear;
+    animation: bump 0.45s linear;
+}
+.whell-1 {
+    -webkit-animation-delay: 0.80s;
+    animation-delay: 0.80s;
+}
+.whell-2 {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+.whell-3 {
+    -webkit-animation-delay: 1.25s;
+    animation-delay: 1.25s;
+}
+.signal {
+    opacity: 0;
+    -webkit-animation: blink .85s infinite linear;
+    -webkit-transform-origin: 50% 50%;
+    animation: blink .85s infinite linear;
+    transform-origin: 50% 50%;
+}
+.signal-1 {
+    -webkit-animation-delay: .04s;
+    animation-delay: .04s;
+}
+.signal-2 {
+    -webkit-animation-delay: .45s;
+    animation-delay: .45s;
+}
+
+@keyframes bump {
+    0% {
+        -webkit-transform: translateY(6%)
+        transform: translateY(6%);
+    }
+    50% {
+        -webkit-transform: translateY(0%);
+        transform: translateY(0%);
+    }
+    80% {
+        -webkit-transform: translateY(-6%);
+        transform: translateY(-6%);
+    }
+    100% {
+        -webkit-transform: translateY(0%);
+        transform: translateY(0%);
+    }
+}
+
+@keyframes blink {
+    0% {
+        -webkit-transform: translateY(40%);
+        opacity: 0;
+        transform: scale(0.4, 0.4);
+    }
+    100%{
+        -webkit-transform: scale(0%);
+        opacity: .8;
+        transform: scale(1, 1);
+    }
+}
