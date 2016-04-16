@@ -1,0 +1,46 @@
+
+.smoke{
+  -webkit-animation: thingy 1s infinite ease forwards;
+  animation: thingy 1s infinite ease forwards;
+}
+.smoke-1{
+  animation-delay: .6s;
+}
+.fire {
+  -webkit-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
+  -webkit-animation: propulsion .25s infinite ease-in-out forwards;
+  animation: propulsion .25s infinite ease-in-out forwards;
+}
+
+@keyframes thingy {
+  0%{
+    transform: translateY(0);
+    height: 50%;
+    opacity: 0;
+  }
+  10%{
+    height: 10%;
+    opacity: 1;
+  }
+  30%, 100%{
+    transform: translateY(2px);
+    height: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes propulsion {
+  0%{
+    transform: scaleY(.5);
+  }
+  10%{
+    transform: scaleY(.65);
+  }
+  30%{
+    transform: scaleY(.8);
+  }
+  100%{
+    transform: scaleY(1);
+  }
+}
