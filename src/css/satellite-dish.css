@@ -1,0 +1,40 @@
+.signal {
+    opacity: 0;
+    -webkit-animation: pulse 1s infinite linear forwards;
+    -webkit-transform: translate(-50%, -50%);
+    -webkit-transform-origin: 50% 50%;
+    animation: pulse 1s infinite linear forwards;
+    transform: translate(-50%, -50%);
+    transform-origin: 50% 50%;
+}
+.signal-2 {
+    -webkit-animation-delay: 0.45s;
+    animation-delay: 0.45s;
+}
+
+.antena {
+  -webkit-animation: move 3s infinite linear forwards;
+  -webkit-transform-origin: 50% 50%;
+  animation: move 3s infinite linear forwards;
+  transform-origin: 50% 50%;
+}
+
+@keyframes move {
+    50% {
+      transform: translate(-3px, -2px) rotate(-10deg)
+    }
+    100% {
+      transform: translate(0px, 0px) rotate(0deg)
+    }
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.5);
+    }
+}
