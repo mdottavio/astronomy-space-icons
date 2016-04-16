@@ -1,6 +1,6 @@
 .whell {
-    -webkit-animation: bump 0.45s infinite ease-in-out forwards alternate;;
-    animation: bump 0.45s infinite ease-in-out forwards alternate;;
+    -webkit-animation: bump 0.45s infinite ease-in-out forwards alternate;
+    animation: bump 0.45s infinite ease-in-out forwards alternate;
 }
 .whell-1 {
     -webkit-animation-delay: 0.80s;

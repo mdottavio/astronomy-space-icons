@@ -1,9 +1,9 @@
 .signal {
     opacity: 0;
-    -webkit-animation: pulse 1s infinite linear forwards;;
+    -webkit-animation: pulse 1s infinite linear forwards;
     -webkit-transform: translate(-50%, -50%);
     -webkit-transform-origin: 50% 50%;
-    animation: pulse 1s infinite linear forwards;;
+    animation: pulse 1s infinite linear forwards;
     transform: translate(-50%, -50%);
     transform-origin: 50% 50%;
 }
