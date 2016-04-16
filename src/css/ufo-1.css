@@ -1,0 +1,37 @@
+.ray {
+    -webkit-animation: increase-ray 0.65s infinite ease-in-out forwards alternate;
+    -webkit-transform: translate(-50%, -50%);
+    animation: increase-ray 0.65s infinite ease-in-out forwards alternate;
+    transform: translate(-50%, -50%);
+}
+.ray-1 {
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+}
+.ray-2 {
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+.ray-circle {
+    -webkit-animation: appear 0.65s infinite ease-in-out forwards alternate;
+    animation: appear 0.65s infinite ease-in-out forwards alternate;
+    opacity: 0;
+}
+
+@keyframes increase-ray {
+    0% {
+        -webkit-transform: scale(0, 0);
+        transform: scale(0, 0);
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes appear {
+    100% {
+        opacity: 1;
+    }
+}
