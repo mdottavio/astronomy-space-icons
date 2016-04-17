@@ -2,4 +2,4 @@
 # compress flag is activated.
 ./scripts/compile.sh || exit 1;
 # Add the latest version of your CSS to the commit.
-git add css;
+git add src/css;
