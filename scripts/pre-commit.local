@@ -1,0 +1,5 @@
+# Make sure all the CSS is built without source map link and the
+# compress flag is activated.
+./scripts/compile.sh || exit 1;
+# Add the latest version of your CSS to the commit.
+git add src/css;

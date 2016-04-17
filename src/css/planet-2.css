@@ -1,15 +1,25 @@
 .start {
-  opacity: 0;
-}
-.start-1 {
-    -webkit-animation: shine 1.85s infinite ease-in-out forwards alternate;
-    animation: shine 1.85s infinite ease-in-out forwards alternate;
-    -webkit-animation-delay: .4s;
-    animation-delay: .4s;
-}
+  opacity: 0; }
 
+.start-1 {
+  -o-animation: shine 1.85s infinite ease-in-out forwards alternate;
+  -moz-animation: shine 1.85s infinite ease-in-out forwards alternate;
+  -webkit-animation: shine 1.85s infinite ease-in-out forwards alternate;
+  animation: shine 1.85s infinite ease-in-out forwards alternate;
+  -o-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s; }
+
+@-moz-keyframes shine {
+  100% {
+    opacity: 1; } }
+@-o-keyframes shine {
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes shine {
+  100% {
+    opacity: 1; } }
 @keyframes shine {
-    100% {
-        opacity: 1
-    }
-}
+  100% {
+    opacity: 1; } }

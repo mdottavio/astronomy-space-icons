@@ -1,23 +1,33 @@
 .start {
-  opacity: 0;
-}
+  opacity: 0; }
+
 .start-1 {
-    -webkit-animation: shine 0.65s infinite ease-in-out forwards alternate;
-    animation: shine 0.65s infinite ease-in-out forwards alternate;
-}
+  -o-animation: shine 0.65s infinite ease-in-out forwards alternate;
+  -moz-animation: shine 0.65s infinite ease-in-out forwards alternate;
+  -webkit-animation: shine 0.65s infinite ease-in-out forwards alternate;
+  animation: shine 0.65s infinite ease-in-out forwards alternate; }
 
 .start-2 {
-    -webkit-animation: shine 0.45s infinite ease-in-out forwards alternate;
-    animation: shine 0.45s infinite ease-in-out forwards alternate;
-}
+  -o-animation: shine 0.45s infinite ease-in-out forwards alternate;
+  -moz-animation: shine 0.45s infinite ease-in-out forwards alternate;
+  -webkit-animation: shine 0.45s infinite ease-in-out forwards alternate;
+  animation: shine 0.45s infinite ease-in-out forwards alternate; }
 
 .start-3 {
-    -webkit-animation: shine 0.65s infinite ease-in-out forwards alternate;
-    animation: shine 0.65s infinite ease-in-out forwards alternate;
-}
+  -o-animation: shine 0.65s infinite ease-in-out forwards alternate;
+  -moz-animation: shine 0.65s infinite ease-in-out forwards alternate;
+  -webkit-animation: shine 0.65s infinite ease-in-out forwards alternate;
+  animation: shine 0.65s infinite ease-in-out forwards alternate; }
 
+@-moz-keyframes shine {
+  100% {
+    opacity: 1; } }
+@-o-keyframes shine {
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes shine {
+  100% {
+    opacity: 1; } }
 @keyframes shine {
-    100% {
-        opacity: 1
-    }
-}
+  100% {
+    opacity: 1; } }

@@ -1,0 +1,53 @@
+@import "_mixes";
+
+.smoke{
+  @include animation(thingy 1s infinite ease forwards);
+}
+
+.smoke-1{
+  @include animation-delay(0.6s);
+}
+
+.fire {
+  @include animation(propulsion .25s infinite ease-in-out forwards);
+  @include transform-origin(0% 0%);
+}
+
+@include keyframes(thingy) {
+  0% {
+    @include transform(translateY(0));
+    height: 50%;
+    opacity: 0;
+  }
+  10% {
+    height: 10%;
+    opacity: 1;
+  }
+  30%{
+    @include transform(translateY(2px));
+    height: 0;
+    opacity: 0;
+  }
+  100% {
+    @include transform(translateY(2px));
+    height: 0;
+    opacity: 0;
+  }
+}
+
+
+@include keyframes(propulsion) {
+  0%{
+    @include transform(scaleY(.5));
+  }
+  10%{
+    @include transform(scaleY(.65));
+  }
+  30%{
+    @include transform(scaleY(.8));
+    transform: scaleY(.8);
+  }
+  100%{
+    @include transform(scaleY(1));
+  }
+}

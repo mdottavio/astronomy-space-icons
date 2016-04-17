@@ -1,70 +1,123 @@
-
 .ray {
-    -webkit-animation: hide 2.1s  linear;
-    -webkit-transform-origin: 50% 50%;
-    animation: hide 2.1s  linear;
-    transform-origin: 50% 50%;
-}
+  -o-animation: hide 2.1s linear;
+  -moz-animation: hide 2.1s linear;
+  -webkit-animation: hide 2.1s linear;
+  animation: hide 2.1s linear;
+  -moz-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%; }
+
 #moon {
-    -webkit-animation: move 2.1s  linear;
-    -webkit-transform-origin: 50% 50%;
-    animation: move 2.1s  linear;
-    transform-origin: 50% 50%;
-}
+  -o-animation: move 2.1s linear;
+  -moz-animation: move 2.1s linear;
+  -webkit-animation: move 2.1s linear;
+  animation: move 2.1s linear;
+  -moz-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%; }
+
 #sun {
-    -webkit-animation: reduce 1.8s linear;
-    animation: reduce 1.8s linear;
-    opacity: 0;
-}
+  -o-animation: reduce 1.8s linear;
+  -moz-animation: reduce 1.8s linear;
+  -webkit-animation: reduce 1.8s linear;
+  animation: reduce 1.8s linear;
+  opacity: 0; }
+
+@-moz-keyframes reduce {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@-o-keyframes reduce {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@-webkit-keyframes reduce {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
 @keyframes reduce {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@-moz-keyframes move {
+  100% {
+    -moz-transform: translateX(-72%);
+    -o-transform: translateX(-72%);
+    -webkit-transform: translateX(-72%);
+    transform: translateX(-72%); } }
+@-o-keyframes move {
+  100% {
+    -moz-transform: translateX(-72%);
+    -o-transform: translateX(-72%);
+    -webkit-transform: translateX(-72%);
+    transform: translateX(-72%); } }
+@-webkit-keyframes move {
+  100% {
+    -moz-transform: translateX(-72%);
+    -o-transform: translateX(-72%);
+    -webkit-transform: translateX(-72%);
+    transform: translateX(-72%); } }
 @keyframes move {
-    100% {
-        -webkit-transform: translateX(-72%);
-        transform: translateX(-72%);
-    }
-}
+  100% {
+    -moz-transform: translateX(-72%);
+    -o-transform: translateX(-72%);
+    -webkit-transform: translateX(-72%);
+    transform: translateX(-72%); } }
+@-moz-keyframes hide {
+  60% {
+    -moz-transform: scale(0.45, 0.45);
+    -o-transform: scale(0.45, 0.45);
+    -webkit-transform: scale(0.45, 0.45);
+    transform: scale(0.45, 0.45);
+    opacity: 0.22; }
+  100% {
+    -moz-transform: scale(0, 0);
+    -o-transform: scale(0, 0);
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0);
+    opacity: 0; } }
+@-o-keyframes hide {
+  60% {
+    -moz-transform: scale(0.45, 0.45);
+    -o-transform: scale(0.45, 0.45);
+    -webkit-transform: scale(0.45, 0.45);
+    transform: scale(0.45, 0.45);
+    opacity: 0.22; }
+  100% {
+    -moz-transform: scale(0, 0);
+    -o-transform: scale(0, 0);
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0);
+    opacity: 0; } }
+@-webkit-keyframes hide {
+  60% {
+    -moz-transform: scale(0.45, 0.45);
+    -o-transform: scale(0.45, 0.45);
+    -webkit-transform: scale(0.45, 0.45);
+    transform: scale(0.45, 0.45);
+    opacity: 0.22; }
+  100% {
+    -moz-transform: scale(0, 0);
+    -o-transform: scale(0, 0);
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0);
+    opacity: 0; } }
 @keyframes hide {
-    60% {
-        -webkit-transform: scale(0.45, 0.45);
-        opacity: 0.22;
-        transform: scale(0.45, 0.45);
-    }
-    100% {
-        -webkit-transform: scale(0, 0);
-        opacity: 0.0;
-        transform: scale(0, 0);
-    }
-}
-@-webkit-keyframes  reduce {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-@-webkit-keyframes  move {
-    100% {
-        -webkit-transform: translateX(-72%);
-        transform: translateX(-72%);
-    }
-}
-@-webkit-keyframes  hide {
-    60% {
-        -webkit-transform: scale(0.45, 0.45);
-        opacity: 0.22;
-        transform: scale(0.45, 0.45);
-    }
-    100% {
-        -webkit-transform: scale(0, 0);
-        opacity: 0.0;
-        transform: scale(0, 0);
-    }
-}
+  60% {
+    -moz-transform: scale(0.45, 0.45);
+    -o-transform: scale(0.45, 0.45);
+    -webkit-transform: scale(0.45, 0.45);
+    transform: scale(0.45, 0.45);
+    opacity: 0.22; }
+  100% {
+    -moz-transform: scale(0, 0);
+    -o-transform: scale(0, 0);
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0);
+    opacity: 0; } }

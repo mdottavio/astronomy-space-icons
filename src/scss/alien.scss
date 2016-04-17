@@ -1,0 +1,20 @@
+@import "_mixes";
+
+#left-eye,
+#right-eye {
+  @include animation(blink 2.4s infinite linear);
+  @include transform-origin(50% 50%);
+}
+
+@include keyframes(blink) {
+  90% {
+    @include animation-timing-function(ease-in);
+    @include transform(none)
+  }
+  93% {
+    @include transform(scale(1, 0));
+  }
+  100% {
+    @include animation-timing-function(ease-out);
+  }
+}

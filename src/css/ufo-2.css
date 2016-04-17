@@ -1,26 +1,58 @@
 .undercarriage {
-    -webkit-animation: landing 0.65s infinite ease-in-out forwards alternate;
-    -webkit-transform: translate(-50%, -50%);
-    animation: landing 0.65s infinite ease-in-out forwards alternate;
-    transform: translate(-50%, -50%);
-}
+  -o-animation: landing 0.65s infinite ease-in-out forwards alternate;
+  -moz-animation: landing 0.65s infinite ease-in-out forwards alternate;
+  -webkit-animation: landing 0.65s infinite ease-in-out forwards alternate;
+  animation: landing 0.65s infinite ease-in-out forwards alternate;
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -moz-transform-origin: 90% 30%;
+  -o-transform-origin: 90% 30%;
+  -webkit-transform-origin: 90% 30%;
+  transform-origin: 90% 30%; }
 
-.undercarriage-1 {
-    -webkit-transform-origin: 90% 30%;
-    transform-origin: 90% 30%;
-}
-.undercarriage-2 {
-    -webkit-transform-origin: 90% 30%;
-    transform-origin: 90% 30%;
-}
-
+@-moz-keyframes landing {
+  0% {
+    -moz-transform: scale(1, 0);
+    -o-transform: scale(1, 0);
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0); }
+  100% {
+    -moz-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1); } }
+@-o-keyframes landing {
+  0% {
+    -moz-transform: scale(1, 0);
+    -o-transform: scale(1, 0);
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0); }
+  100% {
+    -moz-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1); } }
+@-webkit-keyframes landing {
+  0% {
+    -moz-transform: scale(1, 0);
+    -o-transform: scale(1, 0);
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0); }
+  100% {
+    -moz-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1); } }
 @keyframes landing {
-    0% {
-        -webkit-transform: scale(1, 0);
-        transform: scale(1, 0);
-    }
-    100% {
-        -webkit-transform: scale(1, 1);
-        transform: scale(1, 1);
-    }
-}
+  0% {
+    -moz-transform: scale(1, 0);
+    -o-transform: scale(1, 0);
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0); }
+  100% {
+    -moz-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1); } }

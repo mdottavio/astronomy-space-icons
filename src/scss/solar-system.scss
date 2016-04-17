@@ -1,0 +1,29 @@
+@import "_mixes";
+
+.orvit {
+  @include transform(translate(-50%, -50%));
+}
+
+.orvit-1 {
+  @include animation(spin 4s linear infinite);
+  @include transform-origin(49% 50%);
+}
+
+.orvit-2 {
+  @include animation(spin 6s linear infinite);
+  @include transform-origin(50% 52%);
+}
+
+.orvit-3 {
+  @include animation(spin 10s linear infinite);
+  @include transform-origin(50% 45%);
+}
+
+@include keyframes(spin) {
+  0% {
+    @include transform(rotate(0deg));
+  }
+  100% {
+    @include transform(rotate(360deg));
+  }
+}

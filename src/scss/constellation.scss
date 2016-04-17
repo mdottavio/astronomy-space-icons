@@ -1,0 +1,33 @@
+@import "_mixes";
+
+#star-2,
+#star-6,
+#star-4 {
+  @include animation(shine 0.75s infinite);
+  @include transform-origin(50% 50%);
+}
+#star-1,
+#star-3,
+#star-5 {
+  @include animation(shine 0.55s infinite);
+  @include transform-origin(50% 50%);
+}
+
+@include keyframes(shine) {
+  0% {
+    @include transform(scale(0.4, 0.4));
+    opacity: 0.3;
+  }
+  60% {
+    @include transform(scale(0.25, 0.25));
+    opacity: 0.64;
+  }
+  80% {
+    @include transform(scale(0.45, 0.45));
+    opacity: 0.75;
+  }
+  100% {
+    @include transform(scale(1, 1));
+    opacity: 1;
+  }
+}

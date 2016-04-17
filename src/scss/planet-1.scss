@@ -1,0 +1,22 @@
+@import "_mixes";
+
+.start {
+  opacity: 0;
+}
+.start-1 {
+  @include animation(shine 0.65s infinite ease-in-out forwards alternate);
+}
+
+.start-2 {
+  @include animation(shine 0.45s infinite ease-in-out forwards alternate);
+}
+
+.start-3 {
+  @include animation(shine 0.65s infinite ease-in-out forwards alternate);
+}
+
+@include keyframes(shine) {
+  100% {
+    opacity: 1;
+  }
+}

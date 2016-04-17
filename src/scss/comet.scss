@@ -1,0 +1,34 @@
+@import "_mixes";
+
+#rock {
+  @include animation(roll 0.65s infinite linear);
+  @include transform-origin(50% 50%);
+}
+
+#tail-1,
+#tail-2 {
+  @include transform-origin(100% 100%);
+}
+
+#tail-1 {
+  @include animation(speed 0.65s infinite linear);
+}
+
+#tail-2 {
+  @include animation(speed 0.55s infinite linear);
+}
+
+@include keyframes(speed) {
+  0% {
+    @include transform(scale(0, 0));
+  }
+  100% {
+    @include transform(scale(1, 1));
+  }
+}
+
+@include keyframes(roll) {
+  100% {
+    @include transform(rotate(360deg));
+  }
+}

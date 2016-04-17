@@ -1,0 +1,24 @@
+@import "_mixes";
+
+#capsule {
+  @include animation(shake 0.65s infinite linear forwards);
+  @include transform-origin(50% 50%);
+}
+
+@include keyframes(shake) {
+  0% {
+    @include transform(rotate(2.5deg) translateY(-1px));
+  }
+  20% {
+    @include transform(rotate(1.8deg) translateY(0px));
+  }
+  40% {
+    @include transform(rotate(-1.2deg) translateY(-2px));
+  }
+  60% {
+    @include transform(rotate(-0.2deg) translateY(0px));
+  }
+  100% {
+    @include transform(rotate(0deg) translateY(1px));
+  }
+}

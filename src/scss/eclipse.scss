@@ -1,0 +1,42 @@
+@import "_mixes";
+
+.ray {
+  @include animation(hide 2.1s  linear);
+  @include transform-origin(50% 50%);
+}
+
+#moon {
+  @include animation(move 2.1s linear);
+  @include transform-origin(50% 50%);
+}
+
+#sun {
+  @include animation(reduce 1.8s linear);
+  opacity: 0;
+}
+
+@include keyframes(reduce) {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@include keyframes(move) {
+  100% {
+    @include transform(translateX(-72%));
+  }
+}
+
+@include keyframes(hide) {
+  60% {
+    @include transform(scale(0.45, 0.45));
+    opacity: 0.22;
+  }
+  100% {
+    @include transform(scale(0,0));
+    opacity: 0;
+  }
+}

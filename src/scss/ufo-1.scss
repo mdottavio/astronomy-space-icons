@@ -1,0 +1,34 @@
+@import "_mixes";
+
+.ray {
+  @include animation(increase-ray 0.65s infinite ease-in-out forwards alternate);
+  @include transform(translate(-50%, -50%));
+}
+
+.ray-1 {
+  @include transform-origin(100% 0);
+}
+
+.ray-2 {
+  @include transform-origin(0 0);
+}
+
+.ray-circle {
+  @include animation(appear 0.65s infinite ease-in-out forwards alternate);
+  opacity: 0;
+}
+
+@include keyframes(increase-ray) {
+  0% {
+    @include transform(scale(0, 0));
+  }
+  100% {
+    @include transform(scale(1, 1));
+  }
+}
+
+@include keyframes(appear) {
+  100% {
+    opacity: 1;
+  }
+}
