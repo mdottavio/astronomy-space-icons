@@ -1,0 +1,29 @@
+@import "_mixes";
+
+.whell {
+  @include animation(bump 0.45s infinite ease-in-out forwards alternate);
+}
+.whell-1 {
+  @include animation-delay(0.80s);
+}
+.whell-2 {
+  @include animation-delay(1s);
+}
+.whell-3 {
+  @include animation-delay(1.25s);
+}
+
+@include keyframes(bump) {
+  60% {
+    @include transform(translateY(6%));
+  }
+  50% {
+    @include transform(translateY(0%));
+  }
+  80% {
+    @include transform(translateY(-6%));
+  }
+  100% {
+    @include transform(translateY(0%));
+  }
+}

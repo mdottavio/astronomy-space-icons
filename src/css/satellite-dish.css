@@ -1,0 +1,127 @@
+.signal {
+  -o-animation: pulse 1s infinite linear forwards;
+  -moz-animation: pulse 1s infinite linear forwards;
+  -webkit-animation: pulse 1s infinite linear forwards;
+  animation: pulse 1s infinite linear forwards;
+  -moz-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0; }
+
+.signal-2 {
+  -o-animation-delay: 0.45s;
+  -moz-animation-delay: 0.45s;
+  -webkit-animation-delay: 0.45s;
+  animation-delay: 0.45s; }
+
+.antena {
+  -o-animation: move 3s infinite linear forwards;
+  -moz-animation: move 3s infinite linear forwards;
+  -webkit-animation: move 3s infinite linear forwards;
+  animation: move 3s infinite linear forwards;
+  -moz-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%; }
+
+@-moz-keyframes move {
+  50% {
+    -moz-transform: translate(-3px, -2px) rotate(-11deg);
+    -o-transform: translate(-3px, -2px) rotate(-11deg);
+    -webkit-transform: translate(-3px, -2px) rotate(-11deg);
+    transform: translate(-3px, -2px) rotate(-11deg); }
+  100% {
+    -moz-transform: translate(0px, 0px) rotate(0deg);
+    -o-transform: translate(0px, 0px) rotate(0deg);
+    -webkit-transform: translate(0px, 0px) rotate(0deg);
+    transform: translate(0px, 0px) rotate(0deg); } }
+@-o-keyframes move {
+  50% {
+    -moz-transform: translate(-3px, -2px) rotate(-11deg);
+    -o-transform: translate(-3px, -2px) rotate(-11deg);
+    -webkit-transform: translate(-3px, -2px) rotate(-11deg);
+    transform: translate(-3px, -2px) rotate(-11deg); }
+  100% {
+    -moz-transform: translate(0px, 0px) rotate(0deg);
+    -o-transform: translate(0px, 0px) rotate(0deg);
+    -webkit-transform: translate(0px, 0px) rotate(0deg);
+    transform: translate(0px, 0px) rotate(0deg); } }
+@-webkit-keyframes move {
+  50% {
+    -moz-transform: translate(-3px, -2px) rotate(-11deg);
+    -o-transform: translate(-3px, -2px) rotate(-11deg);
+    -webkit-transform: translate(-3px, -2px) rotate(-11deg);
+    transform: translate(-3px, -2px) rotate(-11deg); }
+  100% {
+    -moz-transform: translate(0px, 0px) rotate(0deg);
+    -o-transform: translate(0px, 0px) rotate(0deg);
+    -webkit-transform: translate(0px, 0px) rotate(0deg);
+    transform: translate(0px, 0px) rotate(0deg); } }
+@keyframes move {
+  50% {
+    -moz-transform: translate(-3px, -2px) rotate(-11deg);
+    -o-transform: translate(-3px, -2px) rotate(-11deg);
+    -webkit-transform: translate(-3px, -2px) rotate(-11deg);
+    transform: translate(-3px, -2px) rotate(-11deg); }
+  100% {
+    -moz-transform: translate(0px, 0px) rotate(0deg);
+    -o-transform: translate(0px, 0px) rotate(0deg);
+    -webkit-transform: translate(0px, 0px) rotate(0deg);
+    transform: translate(0px, 0px) rotate(0deg); } }
+@-moz-keyframes pulse {
+  0% {
+    opacity: 1;
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  100% {
+    opacity: 0;
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5); } }
+@-o-keyframes pulse {
+  0% {
+    opacity: 1;
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  100% {
+    opacity: 0;
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5); } }
+@-webkit-keyframes pulse {
+  0% {
+    opacity: 1;
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  100% {
+    opacity: 0;
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5); } }
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  100% {
+    opacity: 0;
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5); } }

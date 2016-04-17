@@ -1,0 +1,16 @@
+@import "_mixes";
+
+.undercarriage {
+  @include animation(landing 0.65s infinite ease-in-out forwards alternate);
+  @include transform(translate(-50%, -50%));
+  @include transform-origin(90% 30%);
+}
+
+@include keyframes(landing) {
+  0% {
+    @include transform(scale(1, 0));
+  }
+  100% {
+    @include transform(scale(1, 1));
+  }
+}

@@ -1,0 +1,56 @@
+@import "_mixes";
+
+.whell {
+  @include animation(bump 0.45s infinite ease-in-out forwards alternate);
+}
+
+.whell-1 {
+  @include animation-delay(0.80s);
+}
+
+.whell-2 {
+  @include animation-delay(1s);
+}
+
+.whell-3 {
+  @include animation-delay(1.25s);
+}
+
+.signal {
+  @include animation( pulse 1s infinite ease-in-out);
+  @include transform-origin(50% 50%);
+  @include transform(translate(-50%, -50%));
+}
+
+.signal-2 {
+  @include animation-delay(0.45s);
+}
+
+@include keyframes(bump) {
+  60% {
+    @include transform(translateY(6%));
+  }
+  50% {
+    @include transform(translateY(0%));
+  }
+  80% {
+    @include transform(translateY(-6%));
+  }
+  100% {
+    @include transform(translateY(0%));
+  }
+}
+
+@include keyframes(pulse) {
+  0% {
+    @include transform(scale(0.1));
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    @include transform(scale(1.2));
+    opacity: 0;
+  }
+}

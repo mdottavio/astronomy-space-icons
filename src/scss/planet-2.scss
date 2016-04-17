@@ -1,0 +1,16 @@
+@import "_mixes";
+
+.start {
+  opacity: 0;
+}
+
+.start-1 {
+  @include animation(shine 1.85s infinite ease-in-out forwards alternate);
+  @include animation-delay(.4s);
+}
+
+@include keyframes(shine) {
+  100% {
+    opacity: 1;
+  }
+}

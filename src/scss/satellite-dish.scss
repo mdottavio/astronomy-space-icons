@@ -1,0 +1,37 @@
+@import "_mixes";
+
+.signal {
+  @include animation(pulse 1s infinite linear forwards);
+  @include transform-origin(50% 50%);
+  @include transform(translate(-50%, -50%));
+  opacity: 0;
+}
+
+.signal-2 {
+  @include animation-delay(0.45s);
+}
+
+.antena {
+  @include animation(move 3s infinite linear forwards);
+  @include transform-origin(50% 50%);
+}
+
+@include keyframes(move) {
+  50% {
+    @include transform(translate(-3px, -2px) rotate(-11deg));
+  }
+  100% {
+    @include transform(translate(0px, 0px) rotate(0deg));
+  }
+}
+
+@include keyframes(pulse) {
+  0% {
+    opacity: 1;
+    @include transform(scale(0));
+  }
+  100% {
+    opacity: 0;
+    @include transform(scale(1.5));
+  }
+}
